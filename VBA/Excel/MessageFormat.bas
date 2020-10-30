@@ -36,7 +36,7 @@ Function MessageFormat(ByVal x_templateMessage As String, ParamArray x_params() 
     Next i
 
     ' 残分を追加
-    If p_pos < Len(x_templateMessage) Then
+    If p_pos <= Len(x_templateMessage) Then
         p_result = p_result & Mid$(x_templateMessage, p_pos, Len(x_templateMessage) - p_pos + 1)
     End If
     
